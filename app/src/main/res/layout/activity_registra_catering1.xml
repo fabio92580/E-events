@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imgheader"
+            android:src="@drawable/uno_due"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="22dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/textRegistrazione"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:textSize="18dp"
+            android:text="Registrazione servizio catering"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/textNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textRegistrazione"
+            android:layout_margin="10dp"
+            android:text="Nome*:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/nome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            >
+        </EditText>
+
+        <TextView
+            android:id="@+id/textCognome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Cognome*:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <EditText
+            android:id="@+id/cognome"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:layout_margin="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/textDataNascita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Data di nascita*:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/dataNascita"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:inputType="date" />
+
+        <RadioGroup
+            android:id="@+id/radio_sesso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/dataNascita"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            >
+            <RadioButton
+                android:id="@+id/radio_uomo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Uomo"
+                />
+            <RadioButton
+                android:id="@+id/radio_donna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Donna"
+                />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textCAP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="CAP*:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/cap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:id="@+id/textEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Email*:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+            android:id="@+id/textTelefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Telefono*:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/telefono"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="phone"
+            />
+
+        <TextView
+            android:id="@+id/textPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password*:"
+            android:layout_margin="10dp"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:inputType="textPassword"
+            />
+        <TextView
+            android:id="@+id/textConfermaPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Conferma pass*:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/confermaPassword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:inputType="textPassword"
+            />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/textConfermaPassword"
+
+            >
+
+            <Button
+                android:id="@+id/btnAnnulla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="annullaUno"
+                android:layout_margin="5dp"
+                android:text="Annulla"
+                />
+
+            <Button
+                android:id="@+id/btnAvanti1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:onClick="avantiUno"
+                android:text="Avanti" />
+        </GridLayout>
+    </LinearLayout>
+</ScrollView>

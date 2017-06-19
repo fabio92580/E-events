@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textPropostaEvento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:textSize="18dp"
+            android:text="Proposta evento"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/textNomeEvento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:text="Nome evento*:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/nomeEvento"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            >
+        </EditText>
+        <TextView
+            android:id="@+id/textDescrizioneEvento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="10dp"
+            android:text="Descrizione*:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/descrizione"
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            android:layout_margin="10dp"
+            android:background="@color/WhiteSmoke"
+            android:textStyle="italic"/>
+
+
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            >
+
+            <Button
+                android:id="@+id/btnAnnulla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="annulla"
+                android:layout_margin="5dp"
+                android:text="Annulla"
+                />
+
+            <Button
+                android:id="@+id/btnconferma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:onClick="conferma"
+                android:text="Invia proposta evento" />
+        </GridLayout>
+
+
+    </LinearLayout>
+</ScrollView>

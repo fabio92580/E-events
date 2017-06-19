@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgheader"
+            android:src="@drawable/tre_quattro"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="22dp"
+            android:layout_gravity="center"
+            />
+
+
+        <TextView
+            android:id="@+id/textIVA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+            android:text="P. IVA*:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/iva"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            >
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/textTelefonoLocale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Telefono*:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <EditText
+            android:id="@+id/telefonoLocale"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+            android:id="@+id/textEmailLocale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="E-mail*:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/EmailLocale"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:inputType="date" />
+
+
+        <TextView
+            android:id="@+id/textSito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Indirizzo sito web:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/sito"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+            android:id="@+id/textFacebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Pagina Facebook:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/facebook"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+            android:id="@+id/textCategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Categoria locale*:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <GridLayout
+            android:id="@+id/checkboxBarCategoria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/textTelefono">
+
+        <CheckBox
+            android:id="@+id/checkBoxBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bar" />
+        <CheckBox
+            android:id="@+id/checkBoxPub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pub" />
+        <CheckBox
+            android:id="@+id/checkBoxRistorante"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ristorante" />
+        <CheckBox
+            android:id="@+id/checkBoxDiscoteca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discoteca" />
+        </GridLayout>
+
+        <TextView
+            android:id="@+id/textAltro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Altro:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/altro"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            />
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/password"
+
+            >
+
+            <Button
+                android:id="@+id/btnAnnulla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="indietroTre"
+                android:layout_margin="5dp"
+                android:text="Indietro"
+                />
+
+            <Button
+                android:id="@+id/btnAvanti1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:onClick="conferma"
+                android:text="Conferma" />
+        </GridLayout>
+
+
+    </LinearLayout>
+</ScrollView>

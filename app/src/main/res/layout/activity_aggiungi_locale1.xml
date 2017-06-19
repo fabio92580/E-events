@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgheader"
+            android:src="@drawable/uno_tre"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="22dp"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            />
+
+
+        <TextView
+            android:id="@+id/textNomeLocale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Nome locale*:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/nomeLocale"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+
+            >
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/textRegione"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textNomeLocale"
+
+            android:layout_margin="10dp"
+            android:text="Regione*:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <Spinner
+            android:id="@+id/spinnerRegioni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/textProvincia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="10dp"
+            android:text="Provincia*:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/spinnerProvince"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+            />
+
+
+        <TextView
+            android:id="@+id/textPaese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="10dp"
+            android:text="Città/Paese*:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/paese"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/textIndirizzo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="10dp"
+            android:text="Indirizzo*:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/indirizzo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+
+            />
+
+        <TextView
+            android:id="@+id/textInformazioni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Unteriori informazioni sull'indirizzo:"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+        <EditText
+            android:id="@+id/textDescrizione"
+            android:layout_width="match_parent"
+            android:layout_height="400px"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+
+            android:layout_below="@+id/textInformazioni"
+            android:background="@color/WhiteSmoke"
+            android:textStyle="italic"/>
+
+
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+
+            >
+
+            <Button
+                android:id="@+id/btnAnnulla"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="annulla"
+                android:layout_margin="5dp"
+                android:text="Annulla"
+                />
+
+            <Button
+                android:id="@+id/btnAvanti1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:onClick="avantiUno"
+                android:text="Avanti" />
+        </GridLayout>
+
+
+    </LinearLayout>
+</ScrollView>
