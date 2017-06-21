@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".Home"
+            android:name=".HomePR"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -72,6 +72,21 @@
         </activity>
         <activity
             android:name=".ListaEventi">
+        </activity>
+        <activity
+            android:name=".ListaLocali">
+        </activity>
+        <activity
+            android:name=".ListaProposteEventi">
+        </activity>
+        <activity
+            android:name=".HomeUtenteNonRegistrato">
+        </activity>
+        <activity
+            android:name=".HomeUtenteRegistrato">
+        </activity>
+        <activity
+            android:name=".HomeGestoreLocale">
         </activity>
     </application>
 

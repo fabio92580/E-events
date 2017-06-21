@@ -10,7 +10,7 @@ import android.os.Bundle;
 public class DescrizioneLocale extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_descrizione_evento);
+        setContentView(R.layout.activity_descrizione_locale);
 
     }
 }

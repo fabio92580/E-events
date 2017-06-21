@@ -9,7 +9,7 @@
         android:id="@+id/textViewDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lista eventi"
+        android:text="Lista proposte eventi"
         android:layout_margin="5dp"
         android:textSize="20dp"
         android:layout_gravity="center"

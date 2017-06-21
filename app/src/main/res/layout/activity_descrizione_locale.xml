@@ -1,6 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scrollView" >
 
-</LinearLayout>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textNomeEvento"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="UNI Night - La Notte degli Hippie"
+            android:layout_margin="5dp"
+            android:textSize="26dp"
+            android:layout_gravity="center"   />
+
+        <ImageView
+            android:id="@+id/immagineEvento"
+            android:src="@drawable/event"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center" />
+
+        <TextView
+            android:id="@+id/data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_margin="10dp"
+            android:text="Mercoledì dalle ore 22:00 alle ore 3:00"/>
+
+
+
+        <TextView
+            android:id="@+id/indirizzo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:layout_margin="10dp"
+            android:text="Double M \n Via G. Di Martino, 2, 84084 Fisciano"/>
+
+        <TextView
+            android:id="@+id/telefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textSize="22dp"
+
+            android:text="3480956783"/>
+
+
+
+        <TextView
+            android:id="@+id/textDescrizioneEvento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="La musica arriva da un luogo divino e il meglio che si possa fare è cercare di raggiungere quel posto e lasciare che tutto scorra. La vita ruota attorno a quel luogo magico e pieno di fiori.\n  Gli esami si avvicinano? Don't worry, be hippie!  \n  Per una sera abbandona il tuo mondo e rivivi con noi gli anni hipster trasformandoti in un vero figlio dei fiori  \n  Piccole magie colorate delizieranno la serata. Vedrai, lasceranno il segno... \n  VI ASPETTANO MERCOLEDI 21 GIUGNO 2017 per la vostra Notte degli Hippie! \n Double M | Via G. Di Martino | Fisciano | SA \n Ingresso gratuito"
+            android:textSize="16dp"
+            android:layout_gravity="center"   />
+
+
+        <TextView
+            android:id="@+id/partecipanti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_margin="10dp"
+            android:textSize="22dp"
+            android:text="Partecipanti 600"/>
+
+
+
+        <ImageView
+            android:id="@+id/immagineMappa"
+            android:src="@drawable/mappa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

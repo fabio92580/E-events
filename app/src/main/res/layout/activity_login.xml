@@ -63,7 +63,7 @@
     android:layout_below="@+id/passwordET"
     android:layout_centerHorizontal="true"
     android:layout_marginTop="30dp"
-    android:onClick="authenticateLogin"
+    android:onClick="login"
     android:text="Accedi" />
 
     <TextView

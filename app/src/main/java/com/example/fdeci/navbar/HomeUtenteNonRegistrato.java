@@ -1,8 +1,14 @@
 package com.example.fdeci.navbar;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.NavigationView;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
+import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -11,17 +17,27 @@ import android.widget.Toast;
 import java.util.LinkedList;
 import java.util.List;
 
-/**
- * Created by fdeci on 19/06/2017.
- */
-
-public class ListaEventi extends Activity {
+public class HomeUtenteNonRegistrato extends AppCompatActivity
+        implements NavigationView.OnNavigationItemSelectedListener {
     private Evento evento;
     private String str;
 
-    public void onCreate(Bundle savedInstanceState) {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lista_eventi);
+        setContentView(R.layout.activity_home_utente_non_registrato);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawer.setDrawerListener(toggle);
+        toggle.syncState();
+
+        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(this);
+
 
         final ListView listView = (ListView)findViewById(R.id.listViewDemo);
         List list = new LinkedList();
@@ -45,10 +61,62 @@ public class ListaEventi extends Activity {
                         "Click su posizione n."+position+": " +str, Toast.LENGTH_LONG)
                         .show();
 
-                Intent openPage1 = new Intent(ListaEventi.this, DescrizioneEvento.class);
+                Intent openPage1 = new Intent(HomeUtenteNonRegistrato.this, DescrizioneEvento.class);
                 startActivity(openPage1);
             }
         });
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }
+    }
+
+
+
+
+
+    @SuppressWarnings("StatementWithEmptyBody")
+    @Override
+    public boolean onNavigationItemSelected(MenuItem item) {
+        // Handle navigation view item clicks here.
+        int id = item.getItemId();
+
+        if (id == R.id.nav_cerca_locali) {
+            Intent openPage1= new Intent(HomeUtenteNonRegistrato.this, CercaLocali.class);
+            startActivity(openPage1);        }
+        else if (id == R.id.nav_cerca_eventi) {
+            Intent openPage1= new Intent(HomeUtenteNonRegistrato.this, CercaEventi.class);
+            startActivity(openPage1);
+        } else if (id == R.id.nav_accedi_registrati) {
+            Intent openPage1= new Intent(HomeUtenteNonRegistrato.this, Accedi.class);
+            startActivity(openPage1);
+        }else if (id == R.id.nav_aggiungi_locale) {
+            Intent openPage1= new Intent(HomeUtenteNonRegistrato.this, AggiungiLocale.class);
+            startActivity(openPage1);
+        }else if (id == R.id.nav_crea_evento) {
+            Intent openPage1= new Intent(HomeUtenteNonRegistrato.this, CreaEvento.class);
+            startActivity(openPage1);
+        }else if (id == R.id.nav_proponi_evento) {
+            Intent openPage1= new Intent(HomeUtenteNonRegistrato.this, ProponiEvento.class);
+            startActivity(openPage1);
+        }else if (id == R.id.nav_area_riservata) {
+            Intent openPage1= new Intent(HomeUtenteNonRegistrato.this, DescrizionePR.class);
+            startActivity(openPage1);
+        }else if (id == R.id.nav_proposte) {
+            Intent openPage1= new Intent(HomeUtenteNonRegistrato.this, ListaProposteEventi.class);
+            startActivity(openPage1);
+        }
+
+
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer.closeDrawer(GravityCompat.START);
+        return true;
     }
 }

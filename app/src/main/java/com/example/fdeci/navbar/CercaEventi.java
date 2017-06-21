@@ -28,22 +28,22 @@ public class CercaEventi extends Activity {
     }
 
     public void indietro(View v){
-        Intent openPage1= new Intent(CercaEventi.this, Home.class);
+        Intent openPage1= new Intent(CercaEventi.this, HomeUtenteNonRegistrato.class);
         startActivity(openPage1);
     }
 
     public void cercaEventi(View v){
         int item=spinner.getSelectedItemPosition();
         if(item==0) {
-            Intent openPage1 = new Intent(CercaEventi.this, Home.class);
+            Intent openPage1 = new Intent(CercaEventi.this, ListaEventi.class);
             startActivity(openPage1);
         }
         else if(item==1){
-            Intent openPage1 = new Intent(CercaEventi.this, Home.class);
+            Intent openPage1 = new Intent(CercaEventi.this, ListaEventi.class);
             startActivity(openPage1);
         }
         else if(item==2){
-            Intent openPage1 = new Intent(CercaEventi.this, Home.class);
+            Intent openPage1 = new Intent(CercaEventi.this, ListaEventi.class);
             startActivity(openPage1);
         }
     }

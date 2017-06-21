@@ -19,7 +19,7 @@ public class CreaEvento extends Activity {
 
     public void conferma(View v) {
         Toast.makeText(this, "Registrazione avvenuta con successo!", Toast.LENGTH_SHORT).show();
-        Intent openPage1 = new Intent(CreaEvento.this, Home.class);
+        Intent openPage1 = new Intent(CreaEvento.this, HomeUtenteNonRegistrato.class);
         startActivity(openPage1);
     }
 
@@ -33,7 +33,7 @@ public class CreaEvento extends Activity {
 
 
     public void annullaUno(View v) {
-        Intent openPage1 = new Intent(CreaEvento.this, Home.class);
+        Intent openPage1 = new Intent(CreaEvento.this, HomeUtenteNonRegistrato.class);
         startActivity(openPage1);
     }
 }

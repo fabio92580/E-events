@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.fdeci.navbar.HomePR"
+    tools:showIn="@layout/app_bar_home_pr">
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lista eventi"
+        android:layout_margin="5dp"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+
+        />
+    <ListView
+        android:id="@+id/listViewDemo"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp">
+    </ListView>
+
+    <TextView
+        android:id="@+id/textViewInviti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Richieste di partecipazione"
+        android:layout_margin="5dp"
+        android:textSize="20dp"
+        android:layout_gravity="center"
+
+        />
+
+    <ListView
+        android:id="@+id/listViewInviti"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="10dp">
+    </ListView>
+
+</LinearLayout>
+    </android.support.constraint.ConstraintLayout>

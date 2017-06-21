@@ -17,15 +17,16 @@ import android.widget.Toast;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Home extends AppCompatActivity
+public class HomePR extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     private Evento evento;
+    private PropostaEvento propostaEvento;
     private String str;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_home_pr);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -47,7 +48,7 @@ public class Home extends AppCompatActivity
         list.add(new Evento("disco","La musica arriva da un luogo divino e il meglio che si possa fare è cercare di raggiungere quel posto e lasciare che tutto scorra. La vita ruota attorno a quel luogo magico e pieno di fiori.\\n  Gli esami si avvicinano? Don't worry, be hippie!  \\n  Per una sera abbandona il tuo mondo e rivivi con noi gli anni hipster trasformandoti in un vero figlio dei fiori  \\n  Piccole magie colorate delizieranno la serata. Vedrai, lasceranno il segno... \\n  VI ASPETTANO MERCOLEDI 21 GIUGNO 2017 per la vostra Notte degli Hippie! \\n Double M | Via G. Di Martino | Fisciano | SA \\n Ingresso gratuito"));
         list.add(new Evento("disco","La musica arriva da un luogo divino e il meglio che si possa fare è cercare di raggiungere quel posto e lasciare che tutto scorra. La vita ruota attorno a quel luogo magico e pieno di fiori.\\n  Gli esami si avvicinano? Don't worry, be hippie!  \\n  Per una sera abbandona il tuo mondo e rivivi con noi gli anni hipster trasformandoti in un vero figlio dei fiori  \\n  Piccole magie colorate delizieranno la serata. Vedrai, lasceranno il segno... \\n  VI ASPETTANO MERCOLEDI 21 GIUGNO 2017 per la vostra Notte degli Hippie! \\n Double M | Via G. Di Martino | Fisciano | SA \\n Ingresso gratuito"));
         list.add(new Evento("disco","La musica arriva da un luogo divino e il meglio che si possa fare è cercare di raggiungere quel posto e lasciare che tutto scorra. La vita ruota attorno a quel luogo magico e pieno di fiori.\\n  Gli esami si avvicinano? Don't worry, be hippie!  \\n  Per una sera abbandona il tuo mondo e rivivi con noi gli anni hipster trasformandoti in un vero figlio dei fiori  \\n  Piccole magie colorate delizieranno la serata. Vedrai, lasceranno il segno... \\n  VI ASPETTANO MERCOLEDI 21 GIUGNO 2017 per la vostra Notte degli Hippie! \\n Double M | Via G. Di Martino | Fisciano | SA \\n Ingresso gratuito"));
-        CustomAdapter adapter = new CustomAdapter(this, R.layout.row, list);
+        CustomAdapterEventi adapter = new CustomAdapterEventi(this, R.layout.row, list);
         listView.setAdapter(adapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -61,10 +62,39 @@ public class Home extends AppCompatActivity
                         "Click su posizione n."+position+": " +str, Toast.LENGTH_LONG)
                         .show();
 
-                Intent openPage1 = new Intent(Home.this, DescrizioneEvento.class);
+                Intent openPage1 = new Intent(HomePR.this, DescrizioneEvento.class);
                 startActivity(openPage1);
             }
         });
+
+        final ListView listViewInviti = (ListView)findViewById(R.id.listViewInviti);
+        List listInviti = new LinkedList();
+        listInviti.add(new PropostaEvento("UNI Night - La Notte degli Hippie","La musica arriva da un luogo divino e il meglio che si possa fare è cercare di raggiungere quel posto e lasciare che tutto scorra. La vita ruota attorno a quel luogo magico e pieno di fiori.\\n  Gli esami si avvicinano? Don't worry, be hippie!  \\n  Per una sera abbandona il tuo mondo e rivivi con noi gli anni hipster trasformandoti in un vero figlio dei fiori  \\n  Piccole magie colorate delizieranno la serata. Vedrai, lasceranno il segno... \\n  VI ASPETTANO MERCOLEDI 21 GIUGNO 2017 per la vostra Notte degli Hippie! \\n Double M | Via G. Di Martino | Fisciano | SA \\n Ingresso gratuito"));
+        listInviti.add(new PropostaEvento("disco","La musica arriva da un luogo divino e il meglio che si possa fare è cercare di raggiungere quel posto e lasciare che tutto scorra. La vita ruota attorno a quel luogo magico e pieno di fiori.\\n  Gli esami si avvicinano? Don't worry, be hippie!  \\n  Per una sera abbandona il tuo mondo e rivivi con noi gli anni hipster trasformandoti in un vero figlio dei fiori  \\n  Piccole magie colorate delizieranno la serata. Vedrai, lasceranno il segno... \\n  VI ASPETTANO MERCOLEDI 21 GIUGNO 2017 per la vostra Notte degli Hippie! \\n Double M | Via G. Di Martino | Fisciano | SA \\n Ingresso gratuito"));
+        listInviti.add(new PropostaEvento("disco","La musica arriva da un luogo divino e il meglio che si possa fare è cercare di raggiungere quel posto e lasciare che tutto scorra. La vita ruota attorno a quel luogo magico e pieno di fiori.\\n  Gli esami si avvicinano? Don't worry, be hippie!  \\n  Per una sera abbandona il tuo mondo e rivivi con noi gli anni hipster trasformandoti in un vero figlio dei fiori  \\n  Piccole magie colorate delizieranno la serata. Vedrai, lasceranno il segno... \\n  VI ASPETTANO MERCOLEDI 21 GIUGNO 2017 per la vostra Notte degli Hippie! \\n Double M | Via G. Di Martino | Fisciano | SA \\n Ingresso gratuito"));
+        listInviti.add(new PropostaEvento("disco","La musica arriva da un luogo divino e il meglio che si possa fare è cercare di raggiungere quel posto e lasciare che tutto scorra. La vita ruota attorno a quel luogo magico e pieno di fiori.\\n  Gli esami si avvicinano? Don't worry, be hippie!  \\n  Per una sera abbandona il tuo mondo e rivivi con noi gli anni hipster trasformandoti in un vero figlio dei fiori  \\n  Piccole magie colorate delizieranno la serata. Vedrai, lasceranno il segno... \\n  VI ASPETTANO MERCOLEDI 21 GIUGNO 2017 per la vostra Notte degli Hippie! \\n Double M | Via G. Di Martino | Fisciano | SA \\n Ingresso gratuito"));
+        listInviti.add(new PropostaEvento("disco","La musica arriva da un luogo divino e il meglio che si possa fare è cercare di raggiungere quel posto e lasciare che tutto scorra. La vita ruota attorno a quel luogo magico e pieno di fiori.\\n  Gli esami si avvicinano? Don't worry, be hippie!  \\n  Per una sera abbandona il tuo mondo e rivivi con noi gli anni hipster trasformandoti in un vero figlio dei fiori  \\n  Piccole magie colorate delizieranno la serata. Vedrai, lasceranno il segno... \\n  VI ASPETTANO MERCOLEDI 21 GIUGNO 2017 per la vostra Notte degli Hippie! \\n Double M | Via G. Di Martino | Fisciano | SA \\n Ingresso gratuito"));
+        listInviti.add(new PropostaEvento("disco","La musica arriva da un luogo divino e il meglio che si possa fare è cercare di raggiungere quel posto e lasciare che tutto scorra. La vita ruota attorno a quel luogo magico e pieno di fiori.\\n  Gli esami si avvicinano? Don't worry, be hippie!  \\n  Per una sera abbandona il tuo mondo e rivivi con noi gli anni hipster trasformandoti in un vero figlio dei fiori  \\n  Piccole magie colorate delizieranno la serata. Vedrai, lasceranno il segno... \\n  VI ASPETTANO MERCOLEDI 21 GIUGNO 2017 per la vostra Notte degli Hippie! \\n Double M | Via G. Di Martino | Fisciano | SA \\n Ingresso gratuito"));
+        CustomAdapterInvitiEventi adapterInviti = new CustomAdapterInvitiEventi(this, R.layout.row_inviti_eventi, listInviti);
+        listViewInviti.setAdapter(adapterInviti);
+
+
+        listViewInviti.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                propostaEvento = (PropostaEvento) listViewInviti.getItemAtPosition(position);
+                str=propostaEvento.getNome();
+                // Show Toast
+                Toast.makeText(getApplicationContext(),
+                        "Click su posizione n."+position+": " +str, Toast.LENGTH_LONG)
+                        .show();
+
+                Intent openPage1 = new Intent(HomePR.this, DescrizioneEvento.class);
+                startActivity(openPage1);
+            }
+        });
+
 
     }
 
@@ -89,22 +119,28 @@ public class Home extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_cerca_locali) {
-            Intent openPage1= new Intent(Home.this, CercaLocali.class);
+            Intent openPage1= new Intent(HomePR.this, CercaLocali.class);
             startActivity(openPage1);        }
         else if (id == R.id.nav_cerca_eventi) {
-            Intent openPage1= new Intent(Home.this, CercaEventi.class);
+            Intent openPage1= new Intent(HomePR.this, CercaEventi.class);
             startActivity(openPage1);
         } else if (id == R.id.nav_accedi_registrati) {
-            Intent openPage1= new Intent(Home.this, Accedi.class);
+            Intent openPage1= new Intent(HomePR.this, Accedi.class);
             startActivity(openPage1);
         }else if (id == R.id.nav_aggiungi_locale) {
-            Intent openPage1= new Intent(Home.this, AggiungiLocale.class);
+            Intent openPage1= new Intent(HomePR.this, AggiungiLocale.class);
             startActivity(openPage1);
         }else if (id == R.id.nav_crea_evento) {
-            Intent openPage1= new Intent(Home.this, CreaEvento.class);
+            Intent openPage1= new Intent(HomePR.this, CreaEvento.class);
             startActivity(openPage1);
         }else if (id == R.id.nav_proponi_evento) {
-            Intent openPage1= new Intent(Home.this, ProponiEvento.class);
+            Intent openPage1= new Intent(HomePR.this, ProponiEvento.class);
+            startActivity(openPage1);
+        }else if (id == R.id.nav_area_riservata) {
+            Intent openPage1= new Intent(HomePR.this, DescrizionePR.class);
+            startActivity(openPage1);
+        }else if (id == R.id.nav_proposte) {
+            Intent openPage1= new Intent(HomePR.this, ListaProposteEventi.class);
             startActivity(openPage1);
         }
 

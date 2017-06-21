@@ -15,13 +15,13 @@ import java.util.List;
  * Created by fdeci on 19/06/2017.
  */
 
-public class ListaEventi extends Activity {
+public class ListaLocali extends Activity {
     private Evento evento;
     private String str;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lista_eventi);
+        setContentView(R.layout.activity_lista_locali);
 
         final ListView listView = (ListView)findViewById(R.id.listViewDemo);
         List list = new LinkedList();
@@ -45,7 +45,7 @@ public class ListaEventi extends Activity {
                         "Click su posizione n."+position+": " +str, Toast.LENGTH_LONG)
                         .show();
 
-                Intent openPage1 = new Intent(ListaEventi.this, DescrizioneEvento.class);
+                Intent openPage1 = new Intent(ListaLocali.this, DescrizioneLocale.class);
                 startActivity(openPage1);
             }
         });
