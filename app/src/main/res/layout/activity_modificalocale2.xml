@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Num. Telefono"
+            android:textSize="18dp"
+            android:id="@+id/textView23"
+            android:layout_marginTop="43dp"
+            android:layout_below="@+id/textView2"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-mail"
+            android:textSize="18dp"
+            android:id="@+id/textView33"
+            android:layout_below="@+id/textView23"
+            android:layout_alignStart="@+id/textView23"
+            android:layout_marginTop="13dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Indirizzo sito web"
+            android:textSize="18dp"
+            android:id="@+id/textView32"
+            android:layout_above="@+id/textView27"
+            android:layout_alignEnd="@+id/textView27" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pagina Facebook"
+            android:textSize="18dp"
+            android:id="@+id/textView27"
+            android:layout_alignBottom="@+id/textView24"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="30dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Categoria locale"
+            android:textSize="18dp"
+            android:id="@+id/textView24"
+            android:layout_marginStart="28dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/checkBox6" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:layout_above="@+id/web"
+            android:layout_alignStart="@+id/web" />
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Indietro"
+            android:onClick="indietro"
+            android:id="@+id/button7"
+            android:layout_alignBaseline="@+id/button6"
+            android:layout_alignBottom="@+id/button6"
+            android:layout_toStartOf="@+id/checkBox7" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avanti"
+            android:onClick="avantilocale"
+            android:layout_marginBottom="26dp"
+            android:id="@+id/button6"
+            android:layout_marginStart="22dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/editText7" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Modifica locale"
+            android:textAlignment="center"
+
+            android:textSize="35dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="textWebEditText"
+            android:id="@+id/web"
+            android:layout_alignBaseline="@+id/textView32"
+            android:layout_alignBottom="@+id/textView32"
+            android:layout_alignEnd="@+id/textView2"
+            android:layout_alignStart="@+id/paginafb" />
+
+        <EditText
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="textWebEditText"
+            android:id="@+id/paginafb"
+            android:layout_below="@+id/web"
+            android:layout_alignEnd="@+id/textView2" />
+        <EditText
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="altro"
+            android:inputType="text"
+            android:id="@+id/editText7"
+            android:layout_alignStart="@+id/checkBox10"
+            android:layout_alignBottom="@+id/checkBox8"
+            android:layout_alignEnd="@+id/checkBox10" />
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="bar"
+            android:id="@+id/checkBox6"
+            android:layout_below="@+id/textView24"
+
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="14dp" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="pub"
+            android:id="@+id/checkBox7"
+            android:layout_alignBaseline="@+id/checkBox6"
+            android:layout_alignBottom="@+id/checkBox6"
+            android:layout_toEndOf="@+id/textView23" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ristorante"
+            android:id="@+id/checkBox10"
+            android:layout_alignBaseline="@+id/checkBox7"
+            android:layout_alignBottom="@+id/checkBox7"
+            android:layout_toEndOf="@+id/textView24" />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="discoteca"
+            android:id="@+id/checkBox8"
+            android:layout_below="@+id/checkBox6"
+            android:layout_alignStart="@+id/checkBox6"
+            android:layout_marginTop="24dp" />
+
+        <EditText
+            android:id="@+id/telefono"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="phone"
+            android:layout_alignBottom="@+id/textView23"
+            android:layout_alignEnd="@+id/email" />
+    </RelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>

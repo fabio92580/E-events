@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_area_riservata"
+            android:icon="@drawable/icona_area_riservata"
+            android:title="Area riservata" />
+        <item
+            android:id="@+id/nav_cerca_locali"
+            android:icon="@drawable/icona_locale"
+            android:title="Cerca locali" />
+        <item
+            android:id="@+id/nav_cerca_eventi"
+            android:icon="@drawable/icona_evento"
+            android:title="Cerca eventi" />
+        <item
+            android:id="@+id/nav_accedi_registrati"
+            android:icon="@drawable/icona_accedi"
+            android:title="Accedi/Registrati" />
+        <item
+            android:id="@+id/nav_crea_evento"
+            android:icon="@drawable/icona_crea_evento"
+            android:title="Crea evento" />
+        <item
+        android:id="@+id/nav_aggiungi_locale"
+        android:icon="@drawable/icona_aggiungi_locale"
+        android:title="Aggiungi locale" />
+        <item
+            android:id="@+id/nav_tendenze"
+            android:icon="@drawable/icona_tendenze"
+            android:title="Visualizza tendenze" />
+        <item
+            android:id="@+id/nav_proposte"
+            android:icon="@drawable/icona_proposte"
+            android:title="Proposte eventi" />
+        <item
+            android:id="@+id/nav_notifiche"
+            android:icon="@drawable/icona_notifiche"
+            android:title="Le tue notifiche" />
+        <item
+            android:id="@+id/nav_impostazioni_eventi"
+            android:icon="@drawable/icona_impostazioni"
+            android:title="Preferenze eventi" />
+        <item
+            android:id="@+id/nav_impostazioni_locali"
+            android:icon="@drawable/icona_impostazioni"
+            android:title="Preferenze locali" />
+        <item
+            android:id="@+id/nav_eventi_prenotati"
+            android:icon="@drawable/icona_eventi_prenotati"
+            android:title="Eventi prenotati" />
+
+    </group>
+
+
+
+</menu>

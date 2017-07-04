@@ -1,0 +1,72 @@
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="?attr/colorPrimary"
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        </android.support.design.widget.AppBarLayout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/tango1"
+            android:layout_marginTop="68dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:layout_width="321dp"
+            android:layout_height="238dp"
+            android:orientation="horizontal"
+            android:layout_above="@+id/indietro"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp">
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView13"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+
+
+                        <TextView
+                            android:id="@+id/textView47"
+                            android:layout_width="321dp"
+
+                            android:layout_height="238dp"
+                            android:text="Le danze latino-americane sono delle danze di coppia e fanno parte delle danze di stile internazionale.
+Le danze conosciute ufficialmente come latino-americane sono cinque: samba,cha cha cha,rumba,paso doble,jive.
+Le figure relative a questi balli differiscono da continente a continente e da una nazione all'altra perché diverse sono le tradizioni locali e le abitudini. Di conseguenza sono state prodotte specifiche codificazioni che hanno tecnicamente una loro validità e una loro giustificazione. Il momento unificante è rappresentato dall'adesione di quasi cento paesi all'IDSF (International Dance Sport Federation) che stabilisce regole e programmi validi per tutti. Per ognuna di esse sono state costruite nel corso degli anni molte decine di figure e ne vengono continuamente inventate di nuove. Ciò è dovuto al fatto che sono molto diffuse e per la loro stessa natura si prestano più di altri balli ad originali interpretazioni personali e fantasia creativa. Attraverso l'insegnamento e la pratica anche spontanea sono state assimilate molto bene dalla cultura europea, nonostante si tratti di danze (specialmente CHA CHA, RUMBA, SAMBA) lontane dal nostro codice genetico. Così anche dichiara la maestra di ballo cubana Miriela Morejon Martinez."
+                            android:textAlignment="gravity"
+                            />
+
+
+        </ScrollView>
+</LinearLayout>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Indietro"
+            android:id="@+id/indietro"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
+        </android.support.design.widget.CoordinatorLayout>

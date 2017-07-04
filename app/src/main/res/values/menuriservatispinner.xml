@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="locali">
+        <item>Music Friends</item>
+        <item>La storia</item>
+        <item>Capocabana/a</item>
+        <item>Arenile</item>
+    </string-array>
+
+    <string-array name="categoria">
+        <item>Piano Bar</item>
+        <item>Disco Music</item>
+        <item>Gastronomia</item>
+        <item>Balli caraibici</item>
+        <item>Festival musicali</item>
+        <item>Jazz</item>
+        <item>Cene con spettacolo</item>
+        <item>Altro</item>
+
+    </string-array>
+
+    <string-array name="tipologia">
+        <item>Bar</item>
+        <item>Pizzeria</item>
+        <item>Ristorante</item>
+        <item>Discoteca</item>
+        <item>Pub</item>
+        <item>Altro</item>
+    </string-array>
+
+
+
+    <string-array name="regione">
+
+        <item>Campania</item>
+
+    </string-array>
+
+    <string-array name="province">
+
+        <item>SA</item>
+    </string-array>
+
+    <string-array name="paesi">
+        <item>Ravello</item>
+
+
+    </string-array>
+
+</resources>

@@ -19,4 +19,53 @@
         <item>Jazz</item>
         <item>Rock</item>
     </string-array>
+
+
+
+    <string name="one">ONE</string>
+    <string name="eight">EIGHT</string>
+    <string name="five">FIVE</string>
+    <string name="four">FOUR</string>
+    <string name="nine">NINE</string>
+    <string name="seven">SEVEN</string>
+    <string name="six">SIX</string>
+    <string name="ten">TEN</string>
+    <string name="three">THREE</string>
+    <string name="two">TWO</string>
+    <string name="title_activity_scrollable_tabs">Scrollable Tabs</string>
+    <string name="title_activity_simple_tabs">Simple Tabs</string>
+    <string name="btn_simple_tabs">Simple Tabs</string>
+    <string name="btn_scrollable_tabs">Scrollable Tabs</string>
+    <string name="btn_icon_text_tabs">Icon &amp; Text Tabs</string>
+    <string name="btn_icon_tabs">Only Icon Tabs</string>
+    <string name="btn_pinned_top_tabs">Pinned To Top Tabs</string>
+    <string name="title_activity_icon_text_tabs">Icon and Text Tabs</string>
+    <string name="title_activity_icon_tabs">Icon Tabs</string>
+    <string name="btn_custom_icon_tabs">Custom View Icon &amp; Text</string>
+    <string name="title_activity_custom_view_icon_text_tabs">Custom View Icon &amp; Text</string>
+    <string name="title_activity_pinned_top_tabs">Pin Top Tabs</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="title_modifica_evento1">Modifica evento (1)</string>
+    <string name="title_modifica_evento2">Modifica evento (2)</string>
+    <string name="title_modifica_locale1">Modifica locale (1)</string>
+    <string name="title_modifica_locale2">Modifica locale (2)</string>
+    <string name="title_modifica_locale3">Modifica locale (3)</string>
+    <string name="title_info_locale">Dettagli locale</string>
+    <string name="profilo_modifica1">Modifica Profilo Utente (1)</string>
+    <string name="profilo_modifica2">Modifica Profilo Utente (2)</string>
+    <string name="tendenze1">Classifica Tendenze</string>
+    <string name="tendenze2">All Stars</string>
+    <string name="tendenze3"> Vicino a te</string>
+    <string name="balli_latini"> Serata Latina </string>
+    <string name="balli_disco"> Serata House </string>
+    <string name="balli_jazz"> Serata Jazz e Blues </string>
+    <string name="balli_anni"> Serata Anni 80-90 </string>
+    <string name="balli_rock">Serata Rock</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="cerca">Cerca locale</string>
+    <string name="risultato1">Risultati per nome</string>
+    <string name="risultato2">Risultati per zona</string>
+    <string name="risultato3">Risultati per categoria</string>
+    <string name="cerca2">Cerca evento</string>
 </resources>

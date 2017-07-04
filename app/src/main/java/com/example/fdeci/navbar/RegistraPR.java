@@ -19,7 +19,7 @@ public class RegistraPR extends Activity {
 
     public void conferma(View v){
         Toast.makeText(this, "Registrazione avvenuta con successo!", Toast.LENGTH_SHORT).show();
-        Intent openPage1= new Intent(RegistraPR.this, Accedi.class);
+        Intent openPage1= new Intent(RegistraPR.this, HomePR.class);
         startActivity(openPage1);
     }
 

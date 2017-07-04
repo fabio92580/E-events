@@ -19,7 +19,7 @@ public class RegistraCatering extends Activity {
 
     public void conferma(View v) {
         Toast.makeText(this, "Registrazione avvenuta con successo!", Toast.LENGTH_SHORT).show();
-        Intent openPage1 = new Intent(RegistraCatering.this, Accedi.class);
+        Intent openPage1 = new Intent(RegistraCatering.this, HomeServizioCatering.class);
         startActivity(openPage1);
     }
 

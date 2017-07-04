@@ -9,10 +9,12 @@ public class PropostaEvento {
 
     private String nome;
     private String proposta;
+    private int img;
 
-    public PropostaEvento(String nome, String proposta) {
+    public PropostaEvento(String nome, String proposta, int img) {
         this.nome = nome;
         this.proposta=proposta;
+        this.img=img;
     }
 
     public String getNome() {
@@ -31,5 +33,7 @@ public class PropostaEvento {
         this.proposta = proposta;
     }
 
-
+public int getImg(){
+    return img;
+}
 }

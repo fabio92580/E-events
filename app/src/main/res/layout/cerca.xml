@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+    </android.support.design.widget.AppBarLayout>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    >
+
+    <FrameLayout
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="70dp"
+        android:layout_width="500dp"
+        android:layout_height="700dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <ListView
+                android:id="@+id/mylistview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layoutinfo"
+            android:orientation="vertical"
+            android:visibility="invisible">
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="550dp">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Torna alla lista"
+                        android:id="@+id/torna"/>
+
+                    <TextView
+                        android:id="@+id/textNomeEvento"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginStart="8dp"
+                        android:text="Caffè Letterario"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="26dp"
+                        android:textStyle="bold"
+                        android:layout_alignTop="@+id/immagineLocale"
+                        android:layout_toRightOf="@+id/textView11"
+                        android:layout_toEndOf="@+id/textView11" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/ratingBar"
+                        android:layout_marginTop="173dp"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <ImageView
+                            android:layout_width="180dp"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/letterario1" />
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="156dp"
+                            android:layout_height="130dp"
+                            android:layout_weight="0.49"
+                            android:src="@drawable/letterario2" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/immagineLocale"
+                        android:layout_width="139dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="69dp"
+                        android:src="@drawable/letterario0"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginStart="2dp" />
+
+                    <RatingBar
+                        android:id="@+id/ratingBar2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_below="@+id/textNomeEvento"
+                        android:layout_alignRight="@+id/imageView5"
+                        android:layout_alignEnd="@+id/imageView5" />
+
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@+id/textView10"
+                        android:layout_marginTop="18dp"
+                        android:text="Se desideri gustare una buona di caffè e un buon libro, vieni al Caffè Letterario. Troverai una vasta scelta di miscele di caffè, thè e infusi ma sopratutto una vasta scelta di libri."
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="20dp"
+                        android:textStyle="italic" />
+
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="via Corso Triste n.89, Caserta (CE)"
+                        android:textColor="#0e9dbe"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/linearLayout4"
+                        android:layout_centerHorizontal="true" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/immagineLocale"
+                        android:layout_alignStart="@+id/immagineLocale"
+                        android:layout_below="@+id/textView9"
+                        android:layout_marginLeft="22dp"
+                        android:layout_marginStart="22dp"
+                        android:layout_marginTop="32dp"
+                        android:linksClickable="true"
+                        android:text="www.caffèletterario.it" />
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical"
+                        android:layout_below="@+id/textView11"
+                        android:layout_alignLeft="@+id/immagineLocale"
+                        android:layout_alignStart="@+id/immagineLocale"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginStart="13dp">
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="71dp"
+                            android:layout_height="75dp"
+                            android:src="@drawable/fb" />
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="71dp"
+                            android:layout_height="67dp"
+                            android:src="@drawable/telefono" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="305dp"
+                        android:layout_height="170dp"
+                        android:src="@drawable/corsolocale"
+                        android:layout_alignTop="@+id/linearLayout5"
+                        android:layout_toRightOf="@+id/immagineLocale"
+                        android:layout_toEndOf="@+id/immagineLocale"
+                        android:layout_marginTop="6dp" />
+
+                </RelativeLayout>
+
+
+            </ScrollView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/layoutevento"
+            android:orientation="vertical"
+            android:visibility="invisible">
+            <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/scrollView1" >
+
+                <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Torna alla lista"
+                        android:id="@+id/torna1"/>
+
+                    <TextView
+                        android:id="@+id/textNomeEvento1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="UNI Night - La Notte degli Hippie"
+                        android:layout_margin="5dp"
+                        android:textSize="26dp"
+                        android:layout_gravity="center"   />
+
+                    <ImageView
+                        android:id="@+id/immagineEvento"
+                        android:src="@drawable/event"
+                        android:layout_width="wrap_content"
+                        android:layout_height="250dp"
+                        android:layout_marginBottom="30dp"
+                        android:layout_gravity="center" />
+
+                    <TextView
+                        android:id="@+id/data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:layout_margin="10dp"
+                        android:text="MercoledÃ¬ dalle ore 22:00 alle ore 3:00"/>
+
+
+
+                    <TextView
+                        android:id="@+id/indirizzo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:layout_margin="10dp"
+                        android:text="Double M \n Via G. Di Martino, 2, 84084 Fisciano"/>
+
+                    <TextView
+                        android:id="@+id/telefono"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:textSize="22dp"
+
+                        android:text="3480956783"/>
+
+
+
+                    <TextView
+                        android:id="@+id/textDescrizioneEvento"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:text="La musica arriva da un luogo divino e il meglio che si possa fare Ã¨ cercare di raggiungere quel posto e lasciare che tutto scorra. La vita ruota attorno a quel luogo magico e pieno di fiori.\n  Gli esami si avvicinano? Don't worry, be hippie!  \n  Per una sera abbandona il tuo mondo e rivivi con noi gli anni hipster trasformandoti in un vero figlio dei fiori  \n  Piccole magie colorate delizieranno la serata. Vedrai, lasceranno il segno... \n  VI ASPETTANO MERCOLEDI 21 GIUGNO 2017 per la vostra Notte degli Hippie! \n Double M | Via G. Di Martino | Fisciano | SA \n Ingresso gratuito"
+                        android:textSize="16dp"
+                        android:layout_gravity="center"   />
+
+
+                    <TextView
+                        android:id="@+id/partecipanti"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp"
+                        android:layout_margin="10dp"
+                        android:textSize="22dp"
+                        android:text="Partecipanti 600"/>
+
+
+
+                    <ImageView
+                        android:id="@+id/immagineMappa"
+                        android:src="@drawable/mappa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        />
+
+                </LinearLayout>
+
+            </ScrollView>
+        </LinearLayout>
+    </FrameLayout>
+</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -19,8 +19,9 @@ public class RegistraUtenteSemplice extends Activity {
     }
 
     public void conferma(View v){
+
         Toast.makeText(this, "Registrazione avvenuta con successo!", Toast.LENGTH_SHORT).show();
-        Intent openPage1= new Intent(RegistraUtenteSemplice.this, Accedi.class);
+        Intent openPage1= new Intent(RegistraUtenteSemplice.this, HomeUtenteRegistrato.class);
         startActivity(openPage1);
     }
 

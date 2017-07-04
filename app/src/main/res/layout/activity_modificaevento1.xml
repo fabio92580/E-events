@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.design.widget.AppBarLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+</android.support.design.widget.AppBarLayout>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="374dp"
+        android:layout_height="487dp"
+        >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:text="Modifica evento"
+            android:textAlignment="center"
+
+            android:textSize="35dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="18dp"
+            android:weightSum="1"
+            android:layout_alignParentEnd="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="309dp"
+                android:layout_alignBottom="@+id/linearLayout"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="4dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/titoloevento"
+                    android:layout_alignBottom="@+id/titoloevento"
+                    android:layout_alignStart="@+id/textView6"
+                    android:text="Titolo"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/data"
+                    android:layout_alignBottom="@+id/data"
+                    android:layout_alignEnd="@+id/textView3"
+                    android:layout_marginEnd="23dp"
+                    android:text="Data"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/orario"
+                    android:layout_alignBottom="@+id/orario"
+                    android:layout_alignStart="@+id/textView6"
+                    android:text="Orario"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/telefono"
+                    android:layout_alignBottom="@+id/telefono"
+                    android:layout_alignEnd="@+id/textView4"
+                    android:text="Num.Telefono"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="11dp"
+                    android:text="Seleziona locale"
+                    android:textSize="20dp"
+                    android:layout_alignBaseline="@+id/spinner1"
+                    android:layout_alignBottom="@+id/spinner1"
+                    android:layout_alignParentStart="true" />
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Visibile ai PR"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignStart="@+id/textView"
+                    android:layout_marginBottom="11dp" />
+
+
+                <EditText
+                    android:id="@+id/titoloevento"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/data"
+                    android:layout_alignEnd="@+id/data"
+                    android:layout_alignStart="@+id/data"
+                    android:inputType="textShortMessage" />
+
+                <EditText
+                    android:id="@+id/data"
+                    android:layout_width="121dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/orario"
+                    android:layout_alignStart="@+id/orario"
+                    android:inputType="date"
+                    android:hint="gg/mm/aaaa"/>
+
+
+                <EditText
+                    android:id="@+id/orario"
+                    android:layout_width="121dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/telefono"
+                    android:layout_alignStart="@+id/telefono"
+                    android:inputType="datetime"
+                    android:hint="20:00"/>
+
+                <EditText
+                    android:id="@+id/telefono"
+                    android:layout_width="125dp"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/spinner1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginEnd="11dp"
+                    android:inputType="phone"
+                    android:hint="+39 ...."/>
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/locali"
+                    android:layout_above="@+id/spinner2"
+                    android:layout_toRightOf="@+id/textView1"
+                    android:layout_toEndOf="@+id/textView1" />
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/categoria"
+                    android:layout_above="@+id/checkBox"
+                    android:layout_alignRight="@+id/spinner1"
+                    android:layout_alignEnd="@+id/spinner1" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Categoria dell'evento"
+                    android:textSize="20dp"
+                    android:layout_below="@+id/textView3"
+                    android:layout_alignParentStart="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="52dp"
+            android:text="Annulla"
+            android:onClick="annullaModifiche"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="44dp"
+            android:text="Avanti"
+            android:onClick="avanti"/>
+
+    </RelativeLayout>
+</LinearLayout>
+    </android.support.design.widget.CoordinatorLayout>

@@ -18,12 +18,12 @@ public class ProponiEvento extends Activity {
     }
 
     public void annulla(View v) {
-        Intent openPage1 = new Intent(ProponiEvento.this, HomeUtenteNonRegistrato.class);
+        Intent openPage1 = new Intent(ProponiEvento.this, HomeUtenteRegistrato.class);
         startActivity(openPage1);
     }
     public void conferma(View v) {
         Toast.makeText(this, "Proposta di evento inviata con successo!", Toast.LENGTH_SHORT).show();
-        Intent openPage1 = new Intent(ProponiEvento.this, HomeUtenteNonRegistrato.class);
+        Intent openPage1 = new Intent(ProponiEvento.this, HomeUtenteRegistrato.class);
         startActivity(openPage1);
     }
 

@@ -4,7 +4,7 @@
     android:orientation="horizontal" >
 
     <ImageView
-        android:id="@+id/immagineUtente"
+        android:id="@+id/immagineEvento"
         android:src="@drawable/ragazzo"
         android:layout_width="100dp"
         android:layout_height="100dp"

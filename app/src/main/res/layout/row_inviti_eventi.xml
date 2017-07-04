@@ -47,13 +47,13 @@
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_marginRight="20dp"
-            app:srcCompat="@drawable/si" />
+            android:src="@drawable/si" />
 
             <ImageButton
                 android:id="@+id/imageButtonno"
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                app:srcCompat="@drawable/no" />
+                android:src="@drawable/no" />
 
         </LinearLayout>
     </LinearLayout>

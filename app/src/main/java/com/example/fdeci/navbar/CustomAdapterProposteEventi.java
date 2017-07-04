@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -27,10 +28,14 @@ public class CustomAdapterProposteEventi extends ArrayAdapter<PropostaEvento> {
         convertView = inflater.inflate(R.layout.row_proposte_eventi, null);
         TextView nome = (TextView)convertView.findViewById(R.id.textViewName);
         TextView proposta = (TextView)convertView.findViewById(R.id.textViewProposta);
+        ImageView img = (ImageView) convertView.findViewById(R.id.immagineEvento);
+
 
         PropostaEvento c = getItem(position);
         nome.setText(c.getNome());
         proposta.setText(c.getProposta());
+        img.setImageResource(c.getImg());
+
         return convertView;
     }
 

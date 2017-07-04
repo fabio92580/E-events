@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_cerca_locali"
+            android:icon="@drawable/icona_locale"
+            android:title="Cerca locali" />
+        <item
+            android:id="@+id/nav_cerca_eventi"
+            android:icon="@drawable/icona_evento"
+            android:title="Cerca eventi" />
+        <item
+            android:id="@+id/nav_accedi_registrati"
+            android:icon="@drawable/icona_accedi"
+            android:title="Accedi/Registrati" />
+    </group>
+
+
+
+</menu>

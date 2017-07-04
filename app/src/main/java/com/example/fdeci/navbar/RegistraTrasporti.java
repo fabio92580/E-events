@@ -19,7 +19,7 @@ public class RegistraTrasporti extends Activity {
 
     public void conferma(View v){
         Toast.makeText(this, "Registrazione avvenuta con successo!", Toast.LENGTH_SHORT).show();
-        Intent openPage1= new Intent(RegistraTrasporti.this, Accedi.class);
+        Intent openPage1= new Intent(RegistraTrasporti.this, HomeServizioTrasporti.class);
         startActivity(openPage1);
     }
 

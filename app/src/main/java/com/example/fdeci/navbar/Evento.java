@@ -1,35 +1,44 @@
 package com.example.fdeci.navbar;
 
+import android.graphics.drawable.Drawable;
+
 /**
- * Created by fdeci on 17/06/2017.
+ * Created by Martina on 23/06/2017.
  */
 
 public class Evento {
 
+        private String name;
+        private String indirizzo;
+        private Drawable picture;
+        private String data;
 
-    private String nome;
-    private String descrizione;
-
-    public Evento(String nome, String descrizione) {
-        this.nome = nome;
-        this.descrizione=descrizione;
+    public Evento(String n, String t, Drawable f) {
+        this.name = n;
+        this.indirizzo = t;
+        this.picture = f;
+    }
+    public Evento(String n, String t, String d, Drawable f) {
+        this.name = n;
+        this.indirizzo = t;
+        this.data=d;
+        this.picture = f;
     }
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public String getIndirizzo() {
+        return indirizzo;
     }
 
-    public String getDescrizione() {
-        return descrizione;
+    public String getData(){ return data; }
+
+    public Drawable getPicture() {
+        return picture;
     }
-
-    public void setDescrizione(String descrizione) {
-        this.descrizione = descrizione;
-    }
-
-
 }
+
+
+

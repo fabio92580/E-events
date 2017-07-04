@@ -1,0 +1,243 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="info.androidhive.materialtabs.fragments.SevenFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="623dp">
+
+
+            <ImageView
+                android:id="@+id/imageProfilo"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+
+                android:onClick="CambiaImmagine"
+                android:text="Cambia immagine di profilo" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/button5"
+
+                android:text="Disabilita  account" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView19"
+                android:layout_alignStart="@+id/textView19"
+                android:text="Nome"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView17"
+                android:layout_alignStart="@+id/textView18"
+                android:layout_marginBottom="11dp"
+                android:text="Cognome"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView15"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="35dp"
+                android:text="Data di nascita"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="CAP/codice postale"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/button1"
+                android:layout_below="@+id/textView15"
+                android:layout_marginTop="11dp"
+                android:text="e-mail"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/donna"
+                android:layout_below="@+id/email"
+                android:text="Num. Telefono"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/imageView"
+                android:layout_alignRight="@+id/imageView"
+                android:layout_below="@+id/telefono"
+                android:layout_marginTop="13dp"
+                android:text="Password"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/pw"
+                android:text="Conferma Password"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/nome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:layout_above="@+id/cognome"
+                android:layout_alignRight="@+id/datanascita"
+                android:layout_alignEnd="@+id/datanascita"
+                android:layout_toRightOf="@+id/textView15"
+                android:layout_toEndOf="@+id/textView15" />
+
+            <EditText
+                android:id="@+id/cognome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/nome"
+
+                android:layout_below="@+id/textView22"
+                android:inputType="text"
+                android:layout_toRightOf="@+id/textView16"
+                android:layout_toEndOf="@+id/textView16" />
+
+            <EditText
+                android:id="@+id/datanascita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/Uomo"
+                android:layout_below="@+id/textView19"
+                android:hint="gg/mm/aaaa"
+                android:inputType="date"
+                android:layout_toRightOf="@+id/textView15"
+                android:layout_toEndOf="@+id/textView15" />
+
+            <EditText
+                android:id="@+id/cap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/email"
+                android:layout_alignStart="@+id/email"
+                android:inputType="textPostalAddress" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/telefono"
+                android:layout_alignTop="@+id/textView21"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/telefono"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textView18"
+                android:hint="+39 ....."
+                android:inputType="textPhonetic"
+                android:layout_alignLeft="@+id/button4"
+                android:layout_alignStart="@+id/button4" />
+
+            <EditText
+                android:id="@+id/pw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:layout_below="@+id/telefono"
+                android:layout_alignLeft="@+id/telefono"
+                android:layout_alignStart="@+id/telefono" />
+
+            <EditText
+                android:id="@+id/cpw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:layout_alignBaseline="@+id/textView16"
+                android:layout_alignBottom="@+id/textView16"
+                android:layout_alignLeft="@+id/pw"
+                android:layout_alignStart="@+id/pw" />
+
+            <RadioButton
+                android:id="@+id/donna"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:selectAllOnFocus="true"
+                android:text="Donna"
+                android:layout_above="@+id/nome"
+                android:layout_toLeftOf="@+id/button5"
+                android:layout_toStartOf="@+id/button5"
+                android:layout_marginRight="14dp"
+                android:layout_marginEnd="14dp" />
+
+            <RadioButton
+                android:id="@+id/Uomo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Uomo"
+                android:layout_above="@+id/nome"
+                android:layout_alignLeft="@+id/cap"
+                android:layout_alignStart="@+id/cap" />
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/textView18"
+                android:layout_alignRight="@+id/textView18"
+                android:layout_below="@+id/cpw"
+                android:layout_marginTop="20dp"
+                android:onClick="annullaModifiche"
+                android:text="Annulla" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/button1"
+                android:layout_alignBottom="@+id/button1"
+                android:layout_toEndOf="@+id/textView16"
+                android:layout_toRightOf="@+id/textView16"
+                android:onClick="confermaModifiche"
+                android:text="Conferma modifiche" />
+
+
+        </RelativeLayout>
+    </LinearLayout>
+    </ScrollView>
